@@ -1,0 +1,41 @@
+#marquee {
+    background-color: #131721;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 12px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+#marquee #gain {
+    color: springgreen;
+}
+
+#marquee #loss {
+    color: tomato;
+}
+
+#marquee strong {
+    font-size: 26px;
+}
+
+#tradingview-widget-container {
+    float: left;
+    max-width: 100%;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#newsFeed {
+    float: right;
+    overflow-y: scroll;
+    height: 620px;
+    width: 500px;
+    color: whitesmoke;
+    background-color: #123;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#newsFeed ul {
+    list-style-type: none;
+}
