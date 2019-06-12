@@ -2,11 +2,13 @@ module.exports = {
     sample : [
         {
             title: "GE",
-            price: 75.75
+            open: 75.75,
+            close: 76.77
         },
         {
             title: "CRON",
-            price: 85.85
+            open: 85.85,
+            close: 85.88
         }
     ]
 }

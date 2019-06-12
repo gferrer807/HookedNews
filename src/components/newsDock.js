@@ -11,7 +11,7 @@ export default function News() {
         const response = await axios.get(`https://newsapi.org/v2/everything?q=bitcoin&from=2019-04-05&sortBy=publishedAt&apiKey=${newsToken}`)
         .then(res => {
           //console.log(res.data)
-          getNews(res.data.articles);
+          return getNews(res.data.articles);
         })
       }, []);
 

@@ -8,11 +8,16 @@ export default function Marquee() {
   const [results, setResults] = useState(sample);
 
   useEffect(async () => {
-    const response = await axios.get('http://localhost:3000/tickers')
-    .then(res => {
-      //console.log(res.data)
-      setResults(res.data);
-    })
+    const result = await axios(
+      '/tickers',
+    );
+    console.log(`This is the result : ${result.data}`)
+    if (result.data !== null) {
+      return setResults(result.data);
+    } else {
+      console.log(sample)
+      return setResults(sample);
+    }
   }, []);
 
   function modifyPrice(close) {

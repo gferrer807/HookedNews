@@ -1,13 +1,27 @@
-#marquee {
+.parent {
+
+    display: grid;
+    
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    
+    grid-column-gap: 0px;
+    
+    grid-row-gap: 0px;
+}
+    
+#marquee { 
+    grid-area: 1 / 1 / 2 / 7;
     background-color: #131721;
     color: white;
     text-decoration: none;
     font-size: 20px;
-    padding: 12px;
     font-family: 'Orbitron', sans-serif;
-}
+    grid-row-gap: 45px;
+ }
 
-#marquee #gain {
+ #marquee #gain {
     color: springgreen;
 }
 
@@ -18,24 +32,25 @@
 #marquee strong {
     font-size: 26px;
 }
-
-#tradingview-widget-container {
+   
+#tradingview-widget-container { 
+    grid-area: 2 / 1 / 6 / 3;
     float: left;
-    max-width: 100%;
-    margin-top: 20px;
-    margin-left: 20px;
+    width: 100%;
 }
-
-#newsFeed {
+    
+#newsFeed { 
+    grid-area: 2 / 3 / 6 / 5;
     float: right;
     overflow-y: scroll;
-    height: 620px;
-    width: 500px;
     color: whitesmoke;
     background-color: #123;
     font-family: 'Montserrat', sans-serif;
 }
 
+
 #newsFeed ul {
     list-style-type: none;
 }
+    
+#priceAndInfo { grid-area: 2 / 5 / 6 / 7; }

@@ -9,18 +9,8 @@ export default function PriceandInfo() {
 
     return (
         <>
-            <div id="newsFeed">
-                <ul>
-                    {news.map((items) => {
-                        return (
-                            <li>
-                                <strong><a href={items.url}>{items.title}</a></strong>
-                                <p id="description">{items.description}</p>
-                                <p id="newsDate">{items.publishedAt}</p>
-                            </li>
-                        )
-                    })}
-                </ul>
+            <div id="priceAndInfo">
+                Hahaha
             </div>
         </>
     )
