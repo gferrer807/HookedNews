@@ -10,12 +10,14 @@
     "clean": "rm dist/bundle.js",
     "build-dev": "webpack -d --mode development",
     "build-prod": "webpack -p --mode production",
-    "start": "webpack-dev-server --hot --mode development"
+    "start": "webpack-dev-server --hot --mode development",
+    "concurrently": "concurrently \"nodemon ./server.js\" \"npm run build-dev\""
   },
   "dependencies": {
     "axios": "^0.18.0",
     "babel-polyfill": "^7.0.0-beta.3",
     "body-parser": "^1.18.3",
+    "concurrently": "^4.1.0",
     "cors": "^2.8.5",
     "express": "^4.16.4",
     "react": "^16.8.6",

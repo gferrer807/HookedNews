@@ -1,3 +1,7 @@
+body {
+    background-color: #112233;
+}
+
 .parent {
 
     display: grid;
@@ -19,6 +23,7 @@
     font-size: 20px;
     font-family: 'Orbitron', sans-serif;
     grid-row-gap: 45px;
+    height: 35px;
  }
 
  #marquee #gain {
